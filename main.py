@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 from constructs import Construct
-from cdktf import App, NamedRemoteWorkspace, TerraformStack, TerraformOutput
-from cdktf_cdktf_provider_aws.provider import AwsProvider
-from cdktf_cdktf_provider_aws.instance import Instance
+from cdktf import App, TerraformStack, TerraformOutput
+from imports.aws.provider import AwsProvider
+from imports.aws.instance import Instance
 
 
 class MyStack(TerraformStack):
