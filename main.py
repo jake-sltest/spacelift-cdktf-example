@@ -22,6 +22,6 @@ class MyStack(TerraformStack):
 
 
 app = App()
-stack = MyStack(app, "aws_instance")
+stack = MyStack(app, "cdktf-example")
 
 app.synth()
