@@ -9,7 +9,7 @@ class MyStack(TerraformStack):
     def __init__(self, scope: Construct, ns: str):
         super().__init__(scope, ns)
 
-        AwsProvider(self, "AWS", region="eu-west-1")
+        AwsProvider(self, "AWS", region="us-east-1")
 
         instance = Instance(self, "compute",
                             ami="ami-02a66cf05465c373f",
