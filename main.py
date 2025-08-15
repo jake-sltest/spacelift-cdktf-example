@@ -14,6 +14,7 @@ class MyStack(TerraformStack):
         instance = Instance(self, "compute",
                             ami="ami-02a66cf05465c373f",
                             instance_type="t2.micro",
+                            subnet_id="subnet-0e565f757c72b9769"
                             )
 
         TerraformOutput(self, "public_ip",
