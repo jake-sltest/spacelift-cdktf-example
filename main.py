@@ -12,7 +12,7 @@ class MyStack(TerraformStack):
         AwsProvider(self, "AWS", region="us-east-1")
 
         instance = Instance(self, "compute",
-                            ami="ami-02a66cf05465c373f",
+                            ami="ami-04a81a99f5ec58529",
                             instance_type="t2.micro",
                             subnet_id="subnet-0e565f757c72b9769"
                             )
